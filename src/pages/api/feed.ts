@@ -10,7 +10,7 @@ const feedEndpoint = async (req : NextApiRequest, res : NextApiResponse<Resposta
         if(req.method === 'GET'){
             if(req?.query?.id){
                 // agora q tenho o id do usuario
-                //como eu valido se o usuario valido
+                // como eu valido se o usuario valido
                 const usuario = await UsuarioModel.findById(req?.query?.id);
                 if(!usuario){
                     return res.status(400).json({erro : 'Usuario nao encontrado'});
