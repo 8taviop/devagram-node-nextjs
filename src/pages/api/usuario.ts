@@ -49,7 +49,7 @@ const handler = nc()
             console.log(e);
         }
     
-        return res.status(400).json({erro : 'Nao foi possivel obeter dados do usuario'});
+        return res.status(400).json({erro : 'Nao foi possivel obter dados do usuario'});
     });
 
 export const config = {
