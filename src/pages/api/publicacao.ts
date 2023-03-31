@@ -7,7 +7,6 @@ import {validarTokenJWT} from '../../../middlewares/validarTokenJWT';
 import {PublicacaoModel} from '../../../models/PublicacaoModel';
 import {UsuarioModel} from '../../../models/UsuarioModel';
 
-
 const handler = nc()
     .use(upload.single('file'))
     .post(async (req : any, res : NextApiResponse<RespostaPadraoMsg>) => {
